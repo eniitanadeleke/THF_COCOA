@@ -1,0 +1,657 @@
+/* Styles specific to the Brands page. */
+
+/* .benefit-list { list-style: none; margin: 24px 0 32px; }
+.benefit-list li { display: flex; gap: 12px; font-size: 0.95rem; color: var(--muted); font-weight: 300; line-height: 1.7; margin-bottom: 12px; }
+.benefit-list li::before { content: '✓'; color: var(--gold-d); font-weight: 600; } */
+
+
+.brands-title-top { display:block; }
+
+.brands-title-top em { color:var(--gold); font-style:italic; font-weight:400; }
+
+.brands-title-bottom { display:block; margin-top:12px; padding-left:70px; font-style:italic; color:#fff7ed; }
+
+@media (max-width:700px) {
+
+  .brands-title-bottom { padding-left:30px; }
+
+}
+
+/* Natkokoa */
+
+.natkokoa-section {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #fffdf8 0%, #f7f0e5 55%, #fffaf3 100%);
+}
+
+.natkokoa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.natkokoa-copy {
+  max-width: 620px;
+}
+
+.natkokoa-overline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.natkokoa-overline span {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(189, 131, 48, .45);
+  border-radius: 50%;
+  color: #b57920;
+  font: 600 .58rem "Manrope", sans-serif;
+}
+
+.natkokoa-overline p {
+  margin: 0;
+  color: #a66e23;
+  font: 600 .72rem "Manrope", sans-serif;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+
+.natkokoa-overline i {
+  width: 90px;
+  height: 1px;
+  background: linear-gradient(90deg, #bd8330, transparent);
+}
+
+.natkokoa-title {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4.5rem, 7vw, 7rem);
+  line-height: .82;
+  color: var(--green);
+}
+
+.natkokoa-title span {
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.natkokoa-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 26px 0;
+}
+
+.natkokoa-divider span {
+  width: 70px;
+  height: 1px;
+  background: #c8a15a;
+}
+
+.natkokoa-divider i {
+  color: #c8a15a;
+  font-style: normal;
+}
+
+.natkokoa-lead {
+  color: #66594d;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.natkokoa-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.natkokoa-benefits li {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.65);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.natkokoa-benefit-number {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  font-size: .7rem;
+  margin-bottom: 12px;
+}
+
+.natkokoa-benefits strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green);
+}
+
+.natkokoa-benefits p {
+  margin: 0;
+  color: #6d6258;
+  font-size: .9rem;
+}
+
+.natkokoa-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.natkokoa-products-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.natkokoa-image {
+  height: 560px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,.15);
+}
+
+.natkokoa-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .6s;
+}
+
+.natkokoa-image:hover img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 992px) {
+
+  .natkokoa-section {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .natkokoa-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .natkokoa-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .natkokoa-image {
+    height: 450px;
+  }
+
+}
+
+
+/* KokoaSkin */
+
+.kokoaskin-section {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 55px 0;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(201, 151, 75, .12), transparent 32%),
+    linear-gradient(135deg, #1c0d08 0%, #32190f 55%, #1b0b07 100%);
+}
+
+.kokoaskin-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: center;
+  gap: 95px;
+}
+
+.kokoaskin-visual {
+  position: relative;
+  padding-left: 50px;
+}
+
+.kokoaskin-vertical-text {
+  position: absolute;
+  top: 50%;
+  left: -34px;
+  color: rgba(232, 194, 130, .6);
+  font: 600 .65rem "Manrope", sans-serif;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.kokoaskin-photo-frame {
+  position: relative;
+  height: 540px;
+  padding: 14px;
+  border: 1px solid rgba(214, 169, 95, .45);
+}
+
+.kokoaskin-photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: -14px 14px 14px -14px;
+  border: 1px solid rgba(214, 169, 95, .18);
+  pointer-events: none;
+}
+
+.kokoaskin-photo-frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.kokoaskin-photo-number {
+  position: absolute;
+  right: -28px;
+  bottom: 28px;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #c99243;
+  color: #211009;
+  font: 700 .72rem "Manrope", sans-serif;
+}
+
+.kokoaskin-content {
+  max-width: 650px;
+}
+
+.kokoaskin-overline {
+  margin: 0 0 18px;
+  color: #d3a45d;
+  font: 600 .7rem "Manrope", sans-serif;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+}
+
+.kokoaskin-title {
+  margin: 0;
+  color: #fff6eb;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(5rem, 7vw, 7.5rem);
+  font-weight: 500;
+  line-height: .78;
+  letter-spacing: -.055em;
+}
+
+.kokoaskin-title span {
+  display: block;
+  margin-left: 80px;
+  color: #d2a35c;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.kokoaskin-intro {
+  max-width: 610px;
+  margin: 30px 0 32px;
+  color: rgba(255, 244, 232, .72);
+  font: 300 1rem/1.8 "Manrope", sans-serif;
+}
+
+.kokoaskin-ingredients {
+  border-top: 1px solid rgba(218, 176, 108, .25);
+}
+
+.kokoaskin-list-title {
+  margin: 20px 0 5px;
+  color: #d3a45d;
+  font: 600 .67rem "Manrope", sans-serif;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.kokoaskin-ingredients ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kokoaskin-ingredients li {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(218, 176, 108, .16);
+}
+
+.kokoaskin-ingredients li span {
+  color: #c99343;
+  font: 600 .63rem "Manrope", sans-serif;
+}
+
+.kokoaskin-ingredients li p {
+  margin: 0;
+  color: #f8eadc;
+  font: 400 .9rem "Manrope", sans-serif;
+}
+
+.kokoaskin-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.kokoaskin-view-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  color: #e2b46c;
+  text-decoration: none;
+  font: 600 .75rem "Manrope", sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.kokoaskin-view-link span {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(226, 180, 108, .45);
+  border-radius: 50%;
+  transition: transform .3s ease, background .3s ease;
+}
+
+.kokoaskin-view-link:hover span {
+  transform: translate(4px, -4px);
+  background: rgba(226, 180, 108, .12);
+}
+
+@media (max-width: 992px) {
+
+  .kokoaskin-section {
+    min-height: auto;
+    padding: 85px 0;
+  }
+
+  .kokoaskin-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .kokoaskin-content {
+    max-width: 100%;
+  }
+
+  .kokoaskin-photo-frame {
+    height: 480px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .kokoaskin-section {
+    padding: 70px 0;
+  }
+
+  .kokoaskin-visual {
+    padding-left: 25px;
+  }
+
+  .kokoaskin-vertical-text {
+    left: -45px;
+  }
+
+  .kokoaskin-photo-frame {
+    height: 390px;
+  }
+
+  .kokoaskin-title {
+    font-size: clamp(4.2rem, 18vw, 5.8rem);
+  }
+
+  .kokoaskin-title span {
+    margin-left: 40px;
+  }
+
+  .kokoaskin-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+}
+
+
+/* Amazon section */
+
+.amazon-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  padding: 85px 0;
+background:
+radial-gradient(circle at top right, rgba(214,170,90,.15), transparent 30%),
+radial-gradient(circle at bottom left, rgba(78,115,70,.08), transparent 35%),
+linear-gradient(
+135deg,
+#4f3827 0%,
+#6a4a33 45%,
+#8a6444 100%
+);
+
+.amazon-section::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  right: -180px;
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(211, 161, 73, .12);
+  border-radius: 50%;
+}
+
+.amazon-section::after {
+  content: "";
+  position: absolute;
+  bottom: -260px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgba(211, 161, 73, .08);
+  border-radius: 50%;
+}
+
+.amazon-content {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.amazon-overline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.amazon-overline span {
+  width: 56px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d49a35);
+}
+
+.amazon-overline span:last-child {
+  transform: scaleX(-1);
+}
+
+.amazon-overline p {
+  margin: 0;
+  color: #d49a35;
+  font: 600 .72rem "Manrope", sans-serif;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+}
+
+.amazon-title {
+  margin: 0;
+  color: #fff8ef;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(4rem, 6.5vw, 7rem);
+  font-weight: 500;
+  line-height: .9;
+  letter-spacing: -.045em;
+}
+
+.amazon-title span {
+  display: block;
+  margin-top: 10px;
+  color: #d8a24a;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.amazon-lead {
+  max-width: 720px;
+  margin: 30px auto 0;
+  color: rgba(255, 243, 231, .7);
+  font: 300 1.05rem/1.85 "Manrope", sans-serif;
+}
+
+.amazon-status {
+  width: max-content;
+  margin: 26px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 243, 231, .72);
+  font: 500 .72rem "Manrope", sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.amazon-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d59c3d;
+  box-shadow: 0 0 0 6px rgba(213, 156, 61, .1);
+  animation: amazonPulse 2s ease-in-out infinite;
+}
+
+.amazon-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.amazon-link {
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 20px 0 25px;
+  border: 1px solid rgba(215, 164, 79, .5);
+  border-radius: 999px;
+  color: #e0ad59;
+  text-decoration: none;
+  font: 600 .78rem "Manrope", sans-serif;
+  transition: transform .3s ease, background .3s ease, color .3s ease;
+}
+
+.amazon-link i {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(215, 164, 79, .1);
+  font-style: normal;
+  transition: transform .3s ease, background .3s ease;
+}
+
+.amazon-link:hover {
+  transform: translateY(-3px);
+  background: #d8a24a;
+  color: #1b0c05;
+}
+
+.amazon-link:hover i {
+  transform: translate(3px, -3px);
+  background: rgba(27, 12, 5, .12);
+}
+
+@keyframes amazonPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .55;
+    transform: scale(.75);
+  }
+}
+
+@media (max-width: 700px) {
+
+  .amazon-section {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .amazon-title {
+    font-size: clamp(3.6rem, 16vw, 5rem);
+  }
+
+  .amazon-lead {
+    font-size: .94rem;
+    line-height: 1.75;
+  }
+
+  .amazon-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .amazon-actions > * {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+
+
+

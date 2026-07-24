@@ -1,0 +1,220 @@
+/* Styles specific to the Infrastructure page. */
+
+/* .chain { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 32px; }
+.chain-step { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 30px; padding: 10px 20px; font-size: 0.8rem; color: rgba(255,255,255,0.85); }
+.chain-arrow { color: var(--gold); font-size: 1rem; }
+.facility { scroll-margin-top: 90px; } */
+
+
+.infrastructure-hero-title { display:block; width:min(100%,980px); }
+
+.infrastructure-hero-line { display:block; opacity:0; transform:translateY(48px); animation:infrastructureHeroReveal .9s cubic-bezier(.22,1,.36,1) forwards; }
+
+.infrastructure-hero-line-one { color:rgba(255,255,255,.92); animation-delay:.08s; }
+
+.infrastructure-hero-line-two { padding-left:68px; color:#fff; animation-delay:.23s; }
+
+.infrastructure-hero-line-three { padding-left:140px; color:#e0aa4d; font-style:italic; animation-delay:.38s; }
+
+.infrastructure-hero-lead { display:block; max-width:780px; opacity:0; transform:translateY(24px); animation:infrastructureHeroLead .8s ease .62s forwards; }
+
+.chain { position:relative; display:flex; align-items:stretch; width:max-content; max-width:100%; margin-top:38px; padding:10px; border:1px solid rgba(255,255,255,.14); border-radius:25px; background:rgba(15,16,12,.34); box-shadow:0 24px 70px rgba(0,0,0,.2); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); opacity:0; transform:translateY(24px); animation:infrastructureChainReveal .8s ease .8s forwards; }
+
+.chain-item { display:flex; align-items:center; }
+
+.chain-step { min-width:164px; display:flex; align-items:center; gap:13px; padding:11px 15px; border-radius:17px; transition:background .3s ease,transform .3s ease; }
+
+.chain-step:hover { transform:translateY(-3px); background:rgba(255,255,255,.075); }
+
+.chain-icon { width:44px; height:44px; display:grid; flex:0 0 auto; place-items:center; border:1px solid rgba(224,170,77,.38); border-radius:14px; background:linear-gradient(145deg,rgba(224,170,77,.17),rgba(224,170,77,.05)); color:#e4ad50; box-shadow:inset 0 1px 0 rgba(255,255,255,.08); }
+
+.chain-icon svg { width:22px; height:22px; display:block; fill:none; stroke:currentColor; stroke-width:1.65; stroke-linecap:round; stroke-linejoin:round; }
+
+.chain-step-copy { display:flex; flex-direction:column; gap:4px; }
+
+.chain-step-copy small { color:rgba(255,255,255,.45); font:600 .51rem "Manrope",sans-serif; letter-spacing:.17em; text-transform:uppercase; }
+
+.chain-step-copy strong { color:#fff; font:500 .88rem "Manrope",sans-serif; letter-spacing:.01em; }
+
+.chain-arrow { width:48px; display:grid; flex:0 0 auto; place-items:center; color:#d9a242; }
+
+.chain-arrow svg { width:36px; height:auto; display:block; fill:none; stroke:currentColor; stroke-width:1.35; stroke-linecap:round; stroke-linejoin:round; }
+
+.facility { scroll-margin-top:90px; }
+
+@keyframes infrastructureHeroReveal {
+
+  to { opacity:1; transform:translateY(0); }
+
+}
+
+@keyframes infrastructureHeroLead {
+
+  to { opacity:1; transform:translateY(0); }
+
+}
+
+@keyframes infrastructureChainReveal {
+
+  to { opacity:1; transform:translateY(0); }
+
+}
+
+@media (max-width:1100px) {
+
+  .infrastructure-hero-line-two { padding-left:42px; }
+
+  .infrastructure-hero-line-three { padding-left:82px; }
+
+  .chain { width:100%; overflow-x:auto; scrollbar-width:none; }
+
+  .chain::-webkit-scrollbar { display:none; }
+
+  .chain-item { flex:0 0 auto; }
+
+  .chain-step { min-width:150px; }
+
+}
+
+@media (max-width:760px) {
+
+  .infrastructure-hero-line-two { padding-left:20px; }
+
+  .infrastructure-hero-line-three { padding-left:36px; }
+
+  .chain { margin-top:30px; padding:9px; border-radius:20px; }
+
+  .chain-step { min-width:142px; gap:10px; padding:10px 11px; }
+
+  .chain-icon { width:39px; height:39px; border-radius:12px; }
+
+  .chain-icon svg { width:19px; height:19px; }
+
+  .chain-arrow { width:33px; }
+
+  .chain-arrow svg { width:25px; }
+
+}
+
+@media (max-width:480px) {
+
+  .infrastructure-hero-line-two { padding-left:10px; }
+
+  .infrastructure-hero-line-three { padding-left:18px; }
+
+  .chain-step { min-width:132px; }
+
+  .chain-step-copy small { font-size:.46rem; }
+
+  .chain-step-copy strong { font-size:.78rem; }
+
+}
+
+
+
+
+.farm-story-section { position:relative; padding:110px 6%; overflow:hidden; background:#564627; }
+
+.farm-story-section::before { content:""; position:absolute; top:0; right:8%; width:1px; height:100%; background:rgba(43,83,32,.1); }
+
+.farm-story-container { position:relative; z-index:1; display:grid; grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr); align-items:center; gap:clamp(60px,8vw,130px); max-width:1600px; margin:0 auto; }
+
+.farm-story-visual { position:relative; min-height:700px; }
+
+.farm-story-visual > img { width:100%; height:700px; display:block; object-fit:cover; border-radius:4px 90px 4px 4px; box-shadow:0 35px 80px rgba(39,48,30,.15); }
+
+.farm-story-visual::after { content:""; position:absolute; inset:0; border-radius:4px 90px 4px 4px; background:linear-gradient(180deg,transparent 48%,rgba(20,31,17,.48) 100%); pointer-events:none; }
+
+.farm-story-number { position:absolute; top:-38px; left:-32px; z-index:2; width:130px; height:130px; display:flex; flex-direction:column; justify-content:center; padding:22px; background:#28541f; color:#fff; }
+
+.farm-story-number span { font:500 2.8rem "Cormorant Garamond",serif; line-height:.8; }
+
+.farm-story-number small { margin-top:12px; color:rgba(255,255,255,.62); font:600 .58rem "Manrope",sans-serif; letter-spacing:.18em; text-transform:uppercase; }
+
+.farm-story-caption { position:absolute; left:40px; right:40px; bottom:35px; z-index:2; display:flex; align-items:center; gap:14px; max-width:460px; color:#fff; }
+
+.farm-story-caption p { margin:0; font:400 .84rem/1.7 "Manrope",sans-serif; color:rgba(255,255,255,.88); }
+
+.farm-caption-dot { width:9px; height:9px; flex:0 0 auto; border-radius:50%; background:#d7a74e; box-shadow:0 0 0 7px rgba(215,167,78,.18); }
+
+.farm-story-content { max-width:650px; }
+
+.farm-story-overline { margin:0 0 24px; color:#8f6b33; font:700 .67rem "Manrope",sans-serif; letter-spacing:.24em; text-transform:uppercase; }
+
+.farm-story-content h2 { margin:0; color:#244b1d; font:500 clamp(3.8rem,6vw,6.8rem)/.84 "Cormorant Garamond",serif; letter-spacing:-.045em; }
+
+.farm-story-content h2 span { display:block; padding-left:70px; color:#9b7137; font-style:italic; }
+
+.farm-story-intro { max-width:590px; margin:38px 0 0; color:#3e4d38; font:400 clamp(1.1rem,1.4vw,1.34rem)/1.75 "Manrope",sans-serif; }
+
+.farm-story-divider { width:100%; height:1px; margin:34px 0; background:linear-gradient(90deg,rgba(41,82,31,.3),transparent); }
+
+.farm-story-body { max-width:580px; margin:0; color:#6b7065; font:400 .95rem/1.85 "Manrope",sans-serif; }
+
+.farm-story-features { display:grid; gap:0; margin-top:40px; border-top:1px solid rgba(39,79,29,.15); }
+
+.farm-feature { display:grid; grid-template-columns:44px 1fr; gap:18px; padding:20px 0; border-bottom:1px solid rgba(39,79,29,.15); }
+
+.farm-feature > span { padding-top:3px; color:#a47a3e; font:600 .66rem "Manrope",sans-serif; letter-spacing:.14em; }
+
+.farm-feature strong { display:block; margin-bottom:5px; color:#294d22; font:600 .9rem "Manrope",sans-serif; }
+
+.farm-feature p { margin:0; color:#767b70; font:400 .8rem/1.6 "Manrope",sans-serif; }
+
+.farm-story-link { width:max-content; display:flex; align-items:center; gap:15px; margin-top:34px; color:#295020; font:700 .7rem "Manrope",sans-serif; letter-spacing:.16em; text-decoration:none; text-transform:uppercase; transition:gap .3s ease,color .3s ease; }
+
+.farm-story-link svg { width:38px; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+
+.farm-story-link:hover { gap:23px; color:#a17636; }
+
+@media (max-width:1100px) {
+
+  .farm-story-section { padding:100px 5%; }
+
+  .farm-story-container { grid-template-columns:1fr 1fr; gap:55px; }
+
+  .farm-story-visual { min-height:620px; }
+
+  .farm-story-visual > img { height:620px; }
+
+  .farm-story-content h2 span { padding-left:35px; }
+
+}
+
+@media (max-width:850px) {
+
+  .farm-story-section { padding:100px 24px 80px; }
+
+  .farm-story-container { grid-template-columns:1fr; gap:70px; }
+
+  .farm-story-visual { min-height:560px; }
+
+  .farm-story-visual > img { height:560px; border-radius:4px 65px 4px 4px; }
+
+  .farm-story-content { max-width:none; }
+
+  .farm-story-content h2 span { padding-left:35px; }
+
+}
+
+@media (max-width:540px) {
+
+  .farm-story-section { padding:80px 18px 65px; }
+
+  .farm-story-visual { min-height:440px; }
+
+  .farm-story-visual > img { height:440px; border-radius:3px 45px 3px 3px; }
+
+  .farm-story-number { top:-25px; left:-5px; width:105px; height:105px; padding:17px; }
+
+  .farm-story-number span { font-size:2.2rem; }
+
+  .farm-story-caption { left:22px; right:22px; bottom:22px; }
+
+  .farm-story-content h2 { font-size:3.7rem; }
+
+  .farm-story-content h2 span { padding-left:18px; }
+
+  .farm-story-intro { margin-top:28px; font-size:1rem; }
+
+}

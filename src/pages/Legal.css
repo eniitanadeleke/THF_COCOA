@@ -1,0 +1,4 @@
+/* Styles specific to the Legal page. */
+
+.legal-toc { display: flex; gap: 12px; margin-bottom: 48px; flex-wrap: wrap; }
+section.legal-block { scroll-margin-top: 100px; }
