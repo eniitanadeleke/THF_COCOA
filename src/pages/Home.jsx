@@ -381,7 +381,7 @@ export default function Home() {
   </div>
 </section>
 
-      <Footer />
+      
       <WaFloat waKey="general" />
     </>
   );
