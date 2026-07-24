@@ -1,0 +1,31 @@
+/* ===== NAVBAR ===== */
+
+nav.site-nav{position:fixed;top:0;width:100%;z-index:999;padding:18px var(--pad-x);display:flex;align-items:center;justify-content:space-between;background:transparent;transition:.4s}
+nav.site-nav.solid,nav.site-nav.opaque{background:rgba(28,15,5,.96)}
+nav.site-nav.solid{backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.15)}
+
+.nav-logo{font:800 1.25rem 'Fraunces',serif;color:var(--white);text-decoration:none;letter-spacing:-.01em;z-index:1002}
+.nav-logo span{color:var(--gold)}
+
+.nav-links{display:none;align-items:center;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.85rem;letter-spacing:.02em;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+@media(min-width:960px){.nav-links{display:flex}}
+
+.nav-right{display:flex;align-items:center;gap:14px}
+
+.nav-cta{padding:10px 22px;border-radius:30px;background:var(--gold);color:var(--dark);font-size:.82rem;font-weight:500;text-decoration:none;white-space:nowrap;transition:.2s}
+.nav-cta:hover{background:var(--gold-d)}
+
+.nav-burger{display:flex;flex-direction:column;gap:5px;padding:6px;background:none;border:0;cursor:pointer;z-index:1002}
+.nav-burger span{width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(min-width:960px){.nav-burger{display:none}}
+
+.nav-drawer{position:fixed;inset:0;z-index:1001;background:var(--dark);display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad-x);opacity:0;pointer-events:none;transition:.3s}
+.nav-drawer.open{opacity:1;pointer-events:auto}
+.nav-drawer a{padding:12px 0;font:700 1.8rem 'Fraunces',serif;color:#fff;text-decoration:none;transition:.2s}
+.nav-drawer a:hover,.nav-drawer a.active{color:var(--gold)}
+.nav-drawer .drawer-small{font-size:.85rem;color:rgba(255,255,255,.5)}

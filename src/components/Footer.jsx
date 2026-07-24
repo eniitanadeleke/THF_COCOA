@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import WaLink from './WaLink.jsx';
+import "./Footer.css";
 
 export default function Footer() {
   return (
