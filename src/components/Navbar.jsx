@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import WaLink from './WaLink.jsx';
+import "./Navbar.css";
 
 const links = [
   { to: '/about', label: 'Our Story' },

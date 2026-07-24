@@ -1,5 +1,6 @@
 import WaIcon from './WaIcon.jsx';
 import { waLink } from '../config/whatsapp.js';
+import "./WaFloat.css";
 
 /** Green "btn-wa" pill button — icon + label, opens WhatsApp. */
 export default function WaButton({ waKey = 'general', message, className = '', children, ...rest }) {
