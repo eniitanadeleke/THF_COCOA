@@ -1,10 +1,11 @@
+import "./Home.css";
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import WaButton from '../components/WaButton.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
-import './Home.css';
+
 
 export default function Home() {
   return (
