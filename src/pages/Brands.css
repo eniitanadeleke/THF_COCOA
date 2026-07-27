@@ -456,15 +456,16 @@
   display: flex;
   align-items: center;
   padding: 85px 0;
-background:
-radial-gradient(circle at top right, rgba(214,170,90,.15), transparent 30%),
-radial-gradient(circle at bottom left, rgba(78,115,70,.08), transparent 35%),
-linear-gradient(
-135deg,
-#4f3827 0%,
-#6a4a33 45%,
-#8a6444 100%
-);
+  background:
+    radial-gradient(circle at top right, rgba(214,170,90,.15), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(78,115,70,.08), transparent 35%),
+    linear-gradient(
+      135deg,
+      #4f3827 0%,
+      #6a4a33 45%,
+      #8a6444 100%
+    );
+}
 
 .amazon-section::before {
   content: "";

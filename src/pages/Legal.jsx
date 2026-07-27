@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
+// import Footer from '../components/Footer.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import './Legal.css';
 
@@ -141,7 +141,7 @@ export default function Legal() {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
       <WaFloat waKey="general" />
     </>
   );

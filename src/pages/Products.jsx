@@ -303,7 +303,7 @@ export default function Products() {
   </div>
 </section>
 
-      <Footer />
+      {/* <Footer /> */}
       <WaFloat waKey="general" />
     </>
   );
