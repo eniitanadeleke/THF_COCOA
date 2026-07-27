@@ -1,5 +1,7 @@
+import infrastructureVideo from "../assets/videos/infrastructure.mp4";
+import packagingImage from "../assets/images/packaging.jpeg";
+import factoryImage from "../assets/images/factoryimage.jpeg";
 import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
 import PageHero from '../components/PageHero.jsx';
 import WaButton from '../components/WaButton.jsx';
 import WaFloat from '../components/WaFloat.jsx';
@@ -69,7 +71,7 @@ export default function Infrastructure() {
       <Navbar opaque />
 
       <PageHero
-        photo="https://images.unsplash.com/photo-1588515724527-074a7a56616c?w=1600&q=80"
+        video={infrastructureVideo}
         overline="Our Infrastructure"
         title={
           <span className="infrastructure-hero-title">
@@ -150,128 +152,118 @@ export default function Infrastructure() {
       
 
       <section
-        className="section section-cream facility"
-        id="factory"
+  className="section section-cream facility facility-luxury"
+  id="factory"
+>
+  <div className="facility-luxury-glow facility-luxury-glow-one" />
+  <div className="facility-luxury-glow facility-luxury-glow-two" />
+
+  <div className="facility-luxury-leaf facility-luxury-leaf-one" />
+  <div className="facility-luxury-leaf facility-luxury-leaf-two" />
+
+  <div className="container">
+    <div className="split rev facility-luxury-grid">
+      <Reveal as="div" className="facility-luxury-copy">
+        <p className="overline">Facility 02 · Nigeria</p>
+
+        <h2 className="h-section facility-luxury-title">
+          The Factory
+        </h2>
+
+        <p className="lead facility-luxury-lead">
+          Full cocoa processing under one roof, including powder, butter,
+          nibs, husk and mass. Our factory transforms raw beans into
+          finished ingredients without leaving our control.
+        </p>
+
+        <div className="tags facility-luxury-tags">
+          <span className="tag-outline">Cocoa Powder</span>
+          <span className="tag-outline">Cocoa Butter</span>
+          <span className="tag-outline">Nibs &amp; Husk</span>
+          <span className="tag-outline">Cocoa Mass</span>
+        </div>
+      </Reveal>
+
+      <Reveal as="div" className="split-photo facility-luxury-photo">
+  <div className="facility-photo-frame">
+    <img
+      src={factoryImage}
+      alt="THF Cocoa processing factory in Nigeria"
+    />
+  </div>
+</Reveal>
+    </div>
+  </div>
+</section>
+
+      <section className="section facility packaging-luxury" id="packaging">
+  <div className="container">
+    <div className="split">
+      <Reveal as="div">
+        <p className="overline">Facility 03 · Nigeria</p>
+
+        <h2 className="h-section packaging-title">
+          The Packaging Facility
+        </h2>
+
+        <p className="lead packaging-lead" style={{ marginBottom: 18 }}>
+          Consumer and wholesale packaging, including 250g and 500g
+          retail packs for Natkokoa and KokoaSkin, plus bulk formats for
+          trade customers. Every order is sealed, labelled and shipped
+          by us.
+        </p>
+
+        <div className="tags packaging-tags">
+          <span className="tag-outline">250g &amp; 500g Retail</span>
+          <span className="tag-outline">Bulk Formats</span>
+          <span className="tag-outline">Export Ready</span>
+        </div>
+      </Reveal>
+
+    <Reveal as="div" className="split-photo packaging-luxury-photo">
+  <div className="packaging-photo-frame">
+    <img
+      src={packagingImage}
+      alt="THF Cocoa packaging facility in Nigeria"
+    />
+  </div>
+</Reveal>
+    </div>
+  </div>
+</section>
+
+      <section className="section infrastructure-cta">
+  <div className="infrastructure-cta-glow infrastructure-cta-glow-one" />
+  <div className="infrastructure-cta-glow infrastructure-cta-glow-two" />
+
+  <Reveal as="div" className="container infrastructure-cta-content">
+    <p className="infrastructure-cta-overline">
+      Experience the THF standard
+    </p>
+
+    <h2 className="h-section infrastructure-cta-title">
+      Want to see the chain for yourself?
+    </h2>
+
+    <p className="lead infrastructure-cta-lead">
+      Trade partners and distributors are welcome to request facility
+      documentation or arrange a visit.
+    </p>
+
+    <div className="btn-row infrastructure-cta-buttons">
+      <WaButton waKey="trade">
+        Talk to Our Trade Team
+      </WaButton>
+
+      <Link
+        to="/trade"
+        className="btn-outline btn-outline-light infrastructure-trade-link"
       >
-        <div className="container">
-          <div className="split rev">
-            <Reveal as="div">
-              <p className="overline">Facility 02 · Nigeria</p>
-
-              <h2
-                className="h-section"
-                style={{
-                  color: 'var(--green)',
-                  marginBottom: 20,
-                }}
-              >
-                The Factory
-              </h2>
-
-              <p className="lead" style={{ marginBottom: 18 }}>
-                Full cocoa processing under one roof, including powder, butter,
-                nibs, husk and mass. Our factory transforms raw beans into
-                finished ingredients without leaving our control.
-              </p>
-
-              <div className="tags">
-                <span className="tag-outline">Cocoa Powder</span>
-                <span className="tag-outline">Cocoa Butter</span>
-                <span className="tag-outline">Nibs &amp; Husk</span>
-                <span className="tag-outline">Cocoa Mass</span>
-              </div>
-            </Reveal>
-
-            <Reveal as="div" className="split-photo">
-              <img
-                src="https://images.unsplash.com/photo-1588515724527-074a7a56616c?w=1000&q=80"
-                alt="THF cocoa processing factory in Nigeria"
-              />
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      <section className="section facility" id="packaging">
-        <div className="container">
-          <div className="split">
-            <Reveal as="div">
-              <p className="overline">Facility 03 · Nigeria</p>
-
-              <h2
-                className="h-section"
-                style={{
-                  color: 'var(--green)',
-                  marginBottom: 20,
-                }}
-              >
-                The Packaging Facility
-              </h2>
-
-              <p className="lead" style={{ marginBottom: 18 }}>
-                Consumer and wholesale packaging, including 250g and 500g
-                retail packs for Natkokoa and KokoaSkin, plus bulk formats for
-                trade customers. Every order is sealed, labelled and shipped
-                by us.
-              </p>
-
-              <div className="tags">
-                <span className="tag-outline">250g &amp; 500g Retail</span>
-                <span className="tag-outline">Bulk Formats</span>
-                <span className="tag-outline">Export Ready</span>
-              </div>
-            </Reveal>
-
-            <Reveal as="div" className="split-photo">
-              <img
-                src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=1000&q=80"
-                alt="THF cocoa packaging facility in Nigeria"
-              />
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-dark">
-        <Reveal
-          as="div"
-          className="container"
-          style={{ textAlign: 'center' }}
-        >
-          <h2
-            className="h-section"
-            style={{ marginBottom: 18 }}
-          >
-            Want to see the chain for yourself?
-          </h2>
-
-          <p
-            className="lead"
-            style={{ margin: '0 auto 32px' }}
-          >
-            Trade partners and distributors are welcome to request facility
-            documentation or arrange a visit.
-          </p>
-
-          <div
-            className="btn-row"
-            style={{ justifyContent: 'center' }}
-          >
-            <WaButton waKey="trade">
-              Talk to Our Trade Team
-            </WaButton>
-
-            <Link
-              to="/trade"
-              className="btn-outline btn-outline-light"
-            >
-              Trade &amp; B2B →
-            </Link>
-          </div>
-        </Reveal>
-      </section>
-
-      <Footer />
+        Trade &amp; B2B <span>→</span>
+      </Link>
+    </div>
+  </Reveal>
+</section>
       <WaFloat waKey="general" />
     </>
   );

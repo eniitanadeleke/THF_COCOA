@@ -241,7 +241,7 @@ export default function Brands() {
   </div>
 </section>
 
-      <Footer />
+      
       <WaFloat waKey="general" />
     </>
   );

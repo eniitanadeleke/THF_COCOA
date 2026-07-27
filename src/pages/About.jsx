@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
+// import Footer from '../components/Footer.jsx';
 import PageHero from '../components/PageHero.jsx';
 import WaLink from '../components/WaLink.jsx';
 import WaButton from '../components/WaButton.jsx';
@@ -445,7 +445,7 @@ export default function About() {
 
   </div>
 </section>
-      <Footer />
+      
       <WaFloat waKey="general" />
     </>
   );

@@ -114,7 +114,7 @@ export default function Trade() {
         </div>
       </section>
 
-      <Footer />
+      
       <WaFloat waKey="trade" />
     </>
   );
