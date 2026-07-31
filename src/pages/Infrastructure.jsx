@@ -1,4 +1,5 @@
 import infrastructureVideo from "../assets/videos/infrastructure.mp4";
+import infrastructureHeroImage from "../assets/images/infastructurehero.jpeg";
 import packagingImage from "../assets/images/packaging.jpeg";
 import factoryImage from "../assets/images/factoryimage.jpeg";
 import Navbar from '../components/Navbar.jsx';
@@ -71,7 +72,8 @@ export default function Infrastructure() {
       <Navbar opaque />
 
       <PageHero
-        video={infrastructureVideo}
+        // video={infrastructureVideo}
+        photo={infrastructureHeroImage}
         overline="Our Infrastructure"
         title={
           <span className="infrastructure-hero-title">

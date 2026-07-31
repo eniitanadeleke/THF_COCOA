@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ourStoryHeroImage from "../assets/images/ourstoryheropics.jpg";
 import Navbar from '../components/Navbar.jsx';
 // import Footer from '../components/Footer.jsx';
 import PageHero from '../components/PageHero.jsx';
@@ -28,9 +29,15 @@ export default function About() {
       <Navbar opaque />
 
       <PageHero
-  photo="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=1600&q=80"
+  photo={ourStoryHeroImage}
   overline="Our Story"
-  title={<>From one farm,<br />to the world.</>}
+  title={
+    <>
+      From one farm,
+      <br />
+      to the world.
+    </>
+  }
   lead="Temple Health & Farms is a West African cocoa company that refused to stop at growing beans."
 />
 
