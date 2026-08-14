@@ -1,6 +1,6 @@
 // ⚠️ PLACEHOLDER — replace with THF Cocoa's real WhatsApp Business number
 // Format: country code + number, digits only, no "+" (e.g. 2348012345678)
-export const WA_NUMBER = '234XXXXXXXXXX';
+export const WA_NUMBER = '2348187213821';
 
 // Pre-filled messages per enquiry type. These keywords trigger the
 // matching auto-reply flow described in THFCocoa-WhatsApp-Automation-Spec.md

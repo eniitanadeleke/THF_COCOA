@@ -1,18 +1,22 @@
 import "./Home.css";
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar.jsx';
 import WaButton from '../components/WaButton.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
+import cocoaTree from '../assets/images/cocoatree2.jpg';
 
 
 export default function Home() {
   return (
     <>
-      
-
+         <Navbar opaque />
       {/* Hero section */}
       <header className="hero">
-        <div className="hero-photo"></div>
+        <div
+  className="hero-photo"
+  style={{ backgroundImage: `url(${cocoaTree})` }}
+></div>
 
         <div className="hero-content container">
           <div className="hero-text">

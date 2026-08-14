@@ -277,8 +277,8 @@ export default function About() {
               <h4>WhatsApp</h4>
 
               <WaLink waKey="contact">
-                +234 XXX XXX XXXX — chat with us
-              </WaLink>
+  +234 818 721 3821 — chat with us
+</WaLink>
             </div>
           </div>
 
@@ -308,9 +308,13 @@ export default function About() {
             <div className="contact-detail-copy">
               <h4>Instagram</h4>
 
-              <a href="#">
-                @thfcocoa
-              </a>
+              <a
+  href="https://www.instagram.com/thfcocoa?igsh=aDByNTZiaXM5N2F0"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  @thfcocoa
+</a>
             </div>
           </div>
 

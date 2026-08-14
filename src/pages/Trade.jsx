@@ -27,92 +27,111 @@ export default function Trade() {
     <>
       <Navbar opaque ctaKey="trade" ctaLabel="Request a Quote" />
 
-      <PageHero
-        photo="https://images.unsplash.com/photo-1610650157504-eb5a3fccd96d?w=1600&q=80"
-        overline="Trade & B2B"
-        title={<>Supplying the world<br />with traceable cocoa</>}
-        lead="Premium West African cocoa ingredients, direct from our farm and factory — no middlemen, full traceability, export ready."
-      >
-        <Reveal as="div" className="btn-row" style={{ marginTop: 32 }} delay={180}>
-          <WaButton waKey="trade">Request a Quote on WhatsApp</WaButton>
-          <a href="mailto:trade@thfcocoa.com" className="btn-outline btn-outline-light">Email Trade Team</a>
-        </Reveal>
-      </PageHero>
+     <PageHero
+  photo="https://images.unsplash.com/photo-1610650157504-eb5a3fccd96d?w=1600&q=80"
+  overline="Trade & B2B"
+  title={
+    <span className="trade-hero-title">
+      <span>Supplying the world</span>
+      <span>with traceable cocoa</span>
+    </span>
+  }
+  lead={
+    <span className="trade-hero-lead">
+      Premium West African cocoa ingredients, direct from our farm and factory —
+      no middlemen, full traceability, export ready.
+    </span>
+  }
+>
+  <Reveal as="div" className="btn-row trade-hero-actions" style={{ marginTop: 32 }} delay={180}>
+    <WaButton waKey="trade">
+      Request a Quote on WhatsApp
+    </WaButton>
+
+    <a
+      href="mailto:trade@thfcocoa.com"
+      className="btn-outline btn-outline-light trade-email-btn"
+    >
+      Email Trade Team
+    </a>
+  </Reveal>
+</PageHero>
 
       {/* WHO WE SUPPLY */}
-      <section className="section">
-        <Reveal as="div" className="container">
-          <p className="overline">Who We Supply</p>
-          <h2 className="h-section" style={{ marginBottom: 28 }}>Built for businesses like yours</h2>
-          <div className="tags">
-            <span className="tag-outline">Chocolate Manufacturers</span>
-            <span className="tag-outline">Food &amp; Beverage Companies</span>
-            <span className="tag-outline">Cosmetic Brands</span>
-            <span className="tag-outline">Nutraceutical Companies</span>
-            <span className="tag-outline">Exporters &amp; Traders</span>
-            <span className="tag-outline">Distributors &amp; Retailers</span>
-          </div>
-        </Reveal>
-      </section>
+      <section className="section trade-supply">
+  <Reveal as="div" className="container">
+    <p className="overline trade-supply-overline">Who We Supply</p>
 
-      {/* BULK INGREDIENTS */}
-      <section className="section section-cream" id="ingredients">
-        <div className="container">
-          <Reveal as="div" className="section-head">
-            <p className="overline">Bulk Ingredients</p>
-            <h2 className="h-section">What we supply</h2>
-          </Reveal>
-          <Reveal as="div" className="b2b-cards">
-            {ingredients.map((ing) => (
-              <WaLink waKey="trade" className="b2b-card" key={ing.title}>
-                <div>
-                  <div className="b2b-card-title">{ing.title}</div>
-                  <div className="b2b-card-desc">{ing.desc}</div>
-                  <div className="tags">
-                    {ing.tags.map((t) => <span className="tag" key={t}>{t}</span>)}
-                  </div>
-                </div>
-                <div className="b2b-card-arrow">›</div>
-              </WaLink>
-            ))}
-          </Reveal>
-          <p style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: 18, fontWeight: 300 }}>
-            Tap any ingredient to start a quote conversation on WhatsApp. Spec sheets available on request.
-          </p>
-        </div>
-      </section>
+    <h2 className="h-section trade-supply-title">
+      Built for businesses like yours
+    </h2>
+
+    <div className="trade-supply-tags">
+      <span className="trade-supply-tag">Chocolate Manufacturers</span>
+      <span className="trade-supply-tag">Food &amp; Beverage Companies</span>
+      <span className="trade-supply-tag">Cosmetic Brands</span>
+      <span className="trade-supply-tag">Nutraceutical Companies</span>
+      <span className="trade-supply-tag">Exporters &amp; Traders</span>
+      <span className="trade-supply-tag">Distributors &amp; Retailers</span>
+    </div>
+  </Reveal>
+</section>
 
       {/* HOW IT WORKS */}
-      <section className="section">
-        <div className="container">
-          <div className="split" style={{ alignItems: 'flex-start' }}>
-            <Reveal as="div">
-              <p className="overline">How It Works</p>
-              <h2 className="h-section" style={{ marginBottom: 36 }}>From enquiry to delivery</h2>
-              {steps.map((s) => (
-                <div className="step" style={s.n === 4 ? { marginBottom: 0 } : undefined} key={s.n}>
-                  <div className="step-num">{s.n}</div>
-                  <div><h3>{s.title}</h3><p>{s.desc}</p></div>
-                </div>
-              ))}
-            </Reveal>
-            <Reveal as="div">
-              <div className="info-card" style={{ background: 'var(--dark)', padding: '44px 36px', position: 'sticky', top: 100 }}>
-                <p className="overline" style={{ color: 'var(--gold)' }}>Become a Distributor</p>
-                <h3 className="h-card" style={{ color: 'var(--white)', fontSize: '1.6rem', marginBottom: 14 }}>
-                  Distribution open across Africa &amp; beyond
-                </h3>
-                <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.9rem', lineHeight: 1.75, fontWeight: 300, marginBottom: 26 }}>
-                  We're building distribution across Nigeria, West Africa, East Africa, South Africa and
-                  internationally. Chat with us and receive the distributor package instantly — read it,
-                  and if it fits, we sign and go.
-                </p>
-                <WaButton waKey="distributor">Become a Distributor</WaButton>
+      <section className="section trade-process">
+  <div className="container">
+    <div className="split trade-process-grid" style={{ alignItems: 'flex-start' }}>
+      <Reveal as="div" className="trade-process-left">
+        <p className="overline trade-process-overline">How It Works</p>
+
+        <h2 className="h-section trade-process-title">
+          From enquiry to delivery
+        </h2>
+
+        <div className="trade-steps">
+          {steps.map((s) => (
+            <div className="trade-step-card" key={s.n}>
+              <div className="step-num">{s.n}</div>
+
+              <div className="trade-step-copy">
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
               </div>
-            </Reveal>
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </Reveal>
+
+      <Reveal as="div" className="trade-distributor-wrap">
+        <div className="trade-distributor-card">
+          <span className="trade-distributor-badge">
+            Partner With THF
+          </span>
+
+          <p className="overline trade-distributor-overline">
+            Become a Distributor
+          </p>
+
+          <h3 className="h-card trade-distributor-title">
+            Distribution open across Africa &amp; beyond
+          </h3>
+
+          <p className="trade-distributor-text">
+            We're building distribution across Nigeria, West Africa, East Africa,
+            South Africa and internationally. Chat with us and receive the distributor
+            package instantly. Read it, and if it fits, we sign and go.
+          </p>
+
+          <div className="trade-distributor-line"></div>
+
+          <WaButton waKey="distributor">
+            Become a Distributor
+          </WaButton>
+        </div>
+      </Reveal>
+    </div>
+  </div>
+</section>
 
       
       <WaFloat waKey="trade" />
