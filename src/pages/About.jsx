@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ourStoryHeroImage from "../assets/images/ourstoryheropics.jpg";
+import cocoaBrandBg from "../assets/images/cocoa.jpeg";
 import Navbar from '../components/Navbar.jsx';
 // import Footer from '../components/Footer.jsx';
 import PageHero from '../components/PageHero.jsx';
@@ -8,7 +9,9 @@ import WaButton from '../components/WaButton.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
 import { WA_NUMBER } from '../config/whatsapp.js';
+import cocoaImage from "../assets/images/cocoa.jpeg";
 import './About.css';
+
 
 
 export default function About() {
@@ -49,70 +52,70 @@ export default function About() {
 
     <div className="about-intro">
 
-      <Reveal as="div" className="about-intro-copy">
+  {/* LEFT: STORY CONTENT */}
+  <Reveal as="div" className="about-intro-copy">
 
-        <p className="about-overline">Who We Are</p>
+    <p className="about-overline">Who We Are</p>
 
-        <h2 className="about-title">
-          Cocoa the way it
-          <span>should be done</span>
-        </h2>
+    <h2 className="about-title">
+      Cocoa the way it
+      <span>should be done</span>
+    </h2>
 
-        <div className="about-divider">
-          <span></span>
-          <i>✦</i>
-          <span></span>
-        </div>
+    <div className="about-divider">
+      <span></span>
+      <i>✦</i>
+      <span></span>
+    </div>
 
-        <div className="about-copy">
+    <div className="about-copy">
+      <p>
+        For generations, West Africa has grown the world&apos;s cocoa while
+        the value was added elsewhere. Temple Health &amp; Farms was founded
+        to change that, growing, processing, packaging and branding premium
+        cocoa right here at home.
+      </p>
 
-          <p>
-            For generations, West Africa has grown the world&apos;s cocoa while
-            the value was added elsewhere. Temple Health &amp; Farms was founded
-            to change that — to grow, process, package and brand premium cocoa
-            right here at home.
-          </p>
+      <p>
+        Today we own our farm in West Africa, our processing factory and our
+        packaging facility in Nigeria. That means every jar of Natkokoa,
+        every tub of KokoaSkin and every tonne of bulk ingredient is
+        traceable back to trees we planted and hands we know.
+      </p>
+    </div>
 
-          <p>
-            Today we own our farm in West Africa, our processing factory and our
-            packaging facility in Nigeria. That means every jar of Natkokoa,
-            every tub of KokoaSkin and every tonne of bulk ingredient is
-            traceable back to trees we planted and hands we know.
-          </p>
+    <a href="#journey" className="about-link">
+      <span>Discover our journey</span>
+      <i>→</i>
+    </a>
 
-        </div>
-
-        <a href="#journey" className="about-link">
-          <span>Discover our journey</span>
-          <i>→</i>
-        </a>
-
-      </Reveal>
+  </Reveal>
 
 
-      <Reveal as="div" className="about-intro-visual">
+  {/* RIGHT: COCOA IMAGE */}
+  <Reveal as="div" className="about-intro-visual">
 
-        <div className="about-image-frame">
+    <div className="about-image-frame">
 
-          <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=1200&q=85"
-            alt="Premium cocoa products from Temple Health and Farms"
-          />
+      <img
+        src={cocoaImage}
+        alt="West African cocoa from Temple Health and Farms"
+        className="about-image"
+      />
 
-          <div className="about-image-shade"></div>
+      <div className="about-image-shade"></div>
 
-          <div className="about-image-badge">
-            <small>✦</small>
-            <strong>100%</strong>
-            <span>West African Cocoa</span>
-          </div>
-
-        </div>
-
-      </Reveal>
+      <div className="about-image-badge">
+        <small>✦</small>
+        <strong>100%</strong>
+        <span>West African Cocoa</span>
+      </div>
 
     </div>
 
+  </Reveal>
+
+</div>
 
     {/* Journey */}
 

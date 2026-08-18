@@ -5,6 +5,7 @@ import WaButton from '../components/WaButton.jsx';
 import WaLink from '../components/WaLink.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
+import nathkokoaWorkspace from "../assets/images/Natkokoaworkspace.jpeg";
 import './Trade.css';
 
 
@@ -28,7 +29,7 @@ export default function Trade() {
       <Navbar opaque ctaKey="trade" ctaLabel="Request a Quote" />
 
      <PageHero
-  photo="https://images.unsplash.com/photo-1610650157504-eb5a3fccd96d?w=1600&q=80"
+  photo={nathkokoaWorkspace}
   overline="Trade & B2B"
   title={
     <span className="trade-hero-title">
@@ -38,12 +39,17 @@ export default function Trade() {
   }
   lead={
     <span className="trade-hero-lead">
-      Premium West African cocoa ingredients, direct from our farm and factory —
+      Premium West African cocoa ingredients, direct from our farm and factory,
       no middlemen, full traceability, export ready.
     </span>
   }
 >
-  <Reveal as="div" className="btn-row trade-hero-actions" style={{ marginTop: 32 }} delay={180}>
+  <Reveal
+    as="div"
+    className="btn-row trade-hero-actions"
+    style={{ marginTop: 32 }}
+    delay={180}
+  >
     <WaButton waKey="trade">
       Request a Quote on WhatsApp
     </WaButton>

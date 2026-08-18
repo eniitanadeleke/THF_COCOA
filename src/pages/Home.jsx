@@ -5,6 +5,10 @@ import WaButton from '../components/WaButton.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
 import cocoaTree from '../assets/images/cocoatree2.jpg';
+import cocoaBrandBg from '../assets/images/cocoa.jpeg';
+import natkokoaImage from '../assets/images/Nathcocoaimage.jpeg';
+import kokoaSkinImage from '../assets/images/kokoaskin.jpeg';
+
 
 
 export default function Home() {
@@ -73,102 +77,106 @@ export default function Home() {
       </section>
 
       {/* Brands section */}
-      <section className="brands-section">
-        <div className="brands-glow brands-glow-one"></div>
-        <div className="brands-glow brands-glow-two"></div>
+      <section
+  className="brands-section"
+  style={{ backgroundImage: `url(${cocoaBrandBg})` }}
+>
+  <div className="brands-overlay"></div>
+  <div className="brands-glow brands-glow-one"></div>
+  <div className="brands-glow brands-glow-two"></div>
 
-        <div className="container">
-          <Reveal as="div" className="brands-heading">
-            <p className="brands-overline">Our Brands</p>
+  <div className="container">
+    <Reveal as="div" className="brands-heading">
+      <p className="brands-overline">Our Brands</p>
 
-            <h2 className="brands-title">
-              Two brands. One honest source.
-            </h2>
+      <h2 className="brands-title">
+        Two brands. One honest source.
+      </h2>
 
-            <p className="brands-intro">
-              From everyday cocoa wellness to naturally rich skincare, both
-              brands begin with cocoa grown, processed and handled by us.
-            </p>
-          </Reveal>
+      <p className="brands-intro">
+        From everyday cocoa wellness to naturally rich skincare, both
+        brands begin with cocoa grown, processed and handled by us.
+      </p>
+    </Reveal>
 
-          <div className="brands-grid">
-            <Reveal
-              as={Link}
-              to="/brands#natkokoa"
-              className="brand-card"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=1200&q=85"
-                alt="Natkokoa natural cocoa products"
-                className="brand-card-image"
-              />
+    <div className="brands-grid">
+      <Reveal
+        as={Link}
+        to="/brands#natkokoa"
+        className="brand-card"
+      >
+        <img
+          src={natkokoaImage}
+          alt="Natkokoa natural cocoa products"
+          className="brand-card-image"
+        />
 
-              <div className="brand-card-overlay"></div>
-              <div className="brand-card-shine"></div>
-              <div className="brand-card-number">01</div>
+        <div className="brand-card-overlay"></div>
+        <div className="brand-card-shine"></div>
+        <div className="brand-card-number">01</div>
 
-              <div className="brand-card-content">
-                <p className="brand-card-label">Wellness Food</p>
+        <div className="brand-card-content">
+          <p className="brand-card-label">Wellness Food</p>
 
-                <h3 className="brand-card-name">Natkokoa</h3>
+          <h3 className="brand-card-name">Natkokoa</h3>
 
-                <p className="brand-card-description">
-                  Pure, natural cocoa for everyday wellness, from rich cocoa
-                  powder to nourishing drinks and other carefully made products.
-                </p>
+          <p className="brand-card-description">
+            Pure, natural cocoa for everyday wellness, from rich cocoa
+            powder to nourishing drinks and other carefully made products.
+          </p>
 
-                <span className="brand-card-button">
-                  <span>Discover</span>
-                  <span className="brand-card-arrow">→</span>
-                </span>
-              </div>
-            </Reveal>
-
-            <Reveal
-              as={Link}
-              to="/brands#kokoaskin"
-              className="brand-card"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1556228578-626d423f9c86?w=1200&q=85"
-                alt="KokoaSkin natural cocoa butter skincare"
-                className="brand-card-image"
-              />
-
-              <div className="brand-card-overlay"></div>
-              <div className="brand-card-shine"></div>
-              <div className="brand-card-number">02</div>
-
-              <div className="brand-card-content">
-                <p className="brand-card-label">Natural Beauty</p>
-
-                <h3 className="brand-card-name">KokoaSkin</h3>
-
-                <p className="brand-card-description">
-                  Naturally rich cocoa-butter skincare crafted from the same
-                  cocoa beans we grow, process and carefully preserve.
-                </p>
-
-                <span className="brand-card-button">
-                  <span>Discover</span>
-                  <span className="brand-card-arrow">→</span>
-                </span>
-              </div>
-            </Reveal>
-          </div>
+          <span className="brand-card-button">
+            <span>Discover</span>
+            <span className="brand-card-arrow">→</span>
+          </span>
         </div>
-      </section>
+      </Reveal>
+
+      <Reveal
+        as={Link}
+        to="/brands#kokoaskin"
+        className="brand-card"
+      >
+        <img
+          src={kokoaSkinImage}
+          alt="KokoaSkin natural cocoa butter skincare"
+          className="brand-card-image"
+        />
+
+        <div className="brand-card-overlay"></div>
+        <div className="brand-card-shine"></div>
+        <div className="brand-card-number">02</div>
+
+        <div className="brand-card-content">
+          <p className="brand-card-label">Natural Beauty</p>
+
+          <h3 className="brand-card-name">KokoaSkin</h3>
+
+          <p className="brand-card-description">
+            Naturally rich cocoa-butter skincare crafted from the same
+            cocoa beans we grow, process and carefully preserve.
+          </p>
+
+          <span className="brand-card-button">
+            <span>Discover</span>
+            <span className="brand-card-arrow">→</span>
+          </span>
+        </div>
+      </Reveal>
+    </div>
+  </div>
+</section>
 
       {/* Farm section */}
       <section className="home-infrastructure">
   <div className="home-infrastructure-media">
-    <img
-      src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?w=1800&q=90"
-      alt="Premium cocoa products produced by Temple Health and Farms"
-    />
+  <img
+    src={cocoaTree}
+    alt="Cocoa farm and cocoa trees at Temple Health and Farms"
+  />
 
-    <div className="home-infrastructure-shade"></div>
-  </div>
+  <div className="home-infrastructure-shade"></div>
+</div>
 
   <Reveal as="div" className="home-infrastructure-card">
     <div className="home-infrastructure-top">
