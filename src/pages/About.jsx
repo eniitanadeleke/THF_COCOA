@@ -10,6 +10,7 @@ import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
 import { WA_NUMBER } from '../config/whatsapp.js';
 import cocoaImage from "../assets/images/cocoa.jpeg";
+import cocoaTreeImage from "../assets/images/cocoatree2.jpg";
 import './About.css';
 
 
@@ -32,7 +33,7 @@ export default function About() {
       <Navbar opaque />
 
       <PageHero
-  photo={ourStoryHeroImage}
+  photo={cocoaTreeImage}
   overline="Our Story"
   title={
     <>

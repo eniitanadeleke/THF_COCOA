@@ -5,6 +5,11 @@ import PageHero from '../components/PageHero.jsx';
 import WaButton from '../components/WaButton.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
+import cocoaPowderImage from "../assets/images/cocoapowder.jpeg";
+import cocoaImage from "../assets/images/cocoa.jpeg";
+import cocoaButterImage from "../assets/images/cocoabutter.jpeg";
+import kokoaSkinImage from "../assets/images/kokoaskin.jpeg";
+import natkokoaImage from "../assets/images/Nathcocoaimage.jpeg";
 import './Products.css';
 
 const FILTERS = [
@@ -16,88 +21,75 @@ const FILTERS = [
 
 const PRODUCTS = [
   {
-    cat: 'natkokoa',
-    brand: 'Natkokoa · Wellness Food',
-    name: 'Pure Cocoa Powder — 250g',
-    desc: '100% natural, single-origin cocoa powder. Rich, unsweetened and full of natural flavanols.',
-    img: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=800&q=80',
-    waKey: 'natkokoa',
-    cta: 'Order on WhatsApp',
+    name: "Natkokoa Cocoa",
+    brand: "Natkokoa",
+    cat: "natkokoa",
+    desc: "Pure West African cocoa crafted for everyday wellness and nourishment.",
+    img: natkokoaImage,
+    waKey: "natkokoa",
+    cta: "Enquire Now",
   },
+
   {
-    cat: 'natkokoa',
-    brand: 'Natkokoa · Wellness Food',
-    name: 'Pure Cocoa Powder — 500g',
-    desc: 'The family size. Same single-origin cocoa, more of it — for daily drinks and baking.',
-    img: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=800&q=80',
-    waKey: 'natkokoa',
-    cta: 'Order on WhatsApp',
+    name: "Natkokoa Cocoa Drink",
+    brand: "Natkokoa",
+    cat: "natkokoa",
+    desc: "Naturally rich cocoa for drinks, wellness routines and everyday enjoyment.",
+    img: natkokoaImage,
+    waKey: "natkokoa",
+    cta: "Enquire Now",
   },
+
   {
-    cat: 'natkokoa',
-    brand: 'Natkokoa · Wellness Food',
-    name: 'Cocoa Husk Tea',
-    desc: 'A naturally caffeine-light infusion brewed from cocoa husks — subtle chocolate notes, zero waste.',
-    img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800&q=80',
-    waKey: 'natkokoa',
-    cta: 'Order on WhatsApp',
+    name: "KokoaSkin Cocoa Butter",
+    brand: "KokoaSkin",
+    cat: "kokoaskin",
+    desc: "Naturally rich cocoa-butter skincare for soft, nourished and hydrated skin.",
+    img: kokoaSkinImage,
+    waKey: "kokoaskin",
+    cta: "Enquire Now",
   },
+
   {
-    cat: 'kokoaskin',
-    brand: 'KokoaSkin · Natural Beauty',
-    name: 'Raw Cocoa Butter',
-    desc: 'Unrefined, cosmetic-grade cocoa butter pressed in our own factory. Deep moisture for skin and hair.',
-    img: 'https://images.unsplash.com/photo-1556228578-626d423f9c86?w=800&q=80',
-    waKey: 'kokoaskin',
-    cta: 'Order on WhatsApp',
+    name: "KokoaSkin Natural Beauty",
+    brand: "KokoaSkin",
+    cat: "kokoaskin",
+    desc: "Natural cocoa-based skincare crafted from cocoa grown and processed by us.",
+    img: kokoaSkinImage,
+    waKey: "kokoaskin",
+    cta: "Enquire Now",
   },
+
   {
-    cat: 'kokoaskin',
-    brand: 'KokoaSkin · Natural Beauty',
-    name: 'Whipped Body Butter',
-    desc: 'Cocoa butter whipped into an everyday body moisturiser — naturally rich in vitamin E.',
-    img: 'https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=800&q=80',
-    waKey: 'kokoaskin',
-    cta: 'Order on WhatsApp',
+    name: "Cocoa Powder",
+    brand: "THF Cocoa",
+    cat: "bulk",
+    desc: "Premium West African cocoa powder supplied for food, beverage and industrial applications.",
+    img: cocoaPowderImage,
+    waKey: "trade",
+    cta: "Request a Quote",
   },
+
   {
-    cat: 'bulk',
-    brand: 'Bulk · B2B',
-    name: 'Cocoa Powder (Bulk)',
-    desc: 'Natural and alkalized cocoa powder in bulk — various pH and fat contents for food manufacturing.',
-    img: 'https://images.unsplash.com/photo-1610650157504-eb5a3fccd96d?w=800&q=80',
-    waKey: 'trade',
-    cta: 'Request Quote',
+    name: "Cocoa Butter",
+    brand: "THF Cocoa",
+    cat: "bulk",
+    desc: "Natural cocoa butter for chocolate, cosmetic and personal-care manufacturing.",
+    img: cocoaButterImage,
+    waKey: "trade",
+    cta: "Request a Quote",
   },
+
   {
-    cat: 'bulk',
-    brand: 'Bulk · B2B',
-    name: 'Cocoa Butter (Bulk)',
-    desc: 'Natural and deodorized cocoa butter for chocolate and cosmetics manufacturing.',
-    img: 'https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?w=800&q=80',
-    waKey: 'trade',
-    cta: 'Request Quote',
-  },
-  {
-    cat: 'bulk',
-    brand: 'Bulk · B2B',
-    name: 'Cocoa Nibs & Husk',
-    desc: 'Roasted and raw nibs; husk for tea blends and nutraceutical applications.',
-    img: 'https://images.unsplash.com/photo-1511381939415-e44015466834?w=800&q=80',
-    waKey: 'trade',
-    cta: 'Request Quote',
-  },
-  {
-    cat: 'bulk',
-    brand: 'Bulk · B2B',
-    name: 'Cocoa Mass / Liquor',
-    desc: 'Pure cocoa liquor from single-origin West African beans, supplied in bulk.',
-    img: 'https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=800&q=80',
-    waKey: 'trade',
-    cta: 'Request Quote',
+    name: "Bulk Cocoa Ingredients",
+    brand: "THF Cocoa",
+    cat: "bulk",
+    desc: "Traceable cocoa ingredients processed and supplied directly from our cocoa chain.",
+    img: cocoaImage,
+    waKey: "trade",
+    cta: "Request a Quote",
   },
 ];
-
 export default function Products() {
   const [filter, setFilter] = useState('all');
 
@@ -111,7 +103,7 @@ export default function Products() {
       <Navbar opaque />
 
       <PageHero
-        photo="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=1600&q=80"
+        photo={cocoaPowderImage}
         overline="Our Cocoa Collection"
         title={
           <span className="products-hero-copy">
