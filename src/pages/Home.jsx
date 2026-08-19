@@ -1,41 +1,85 @@
+import { useEffect, useState } from 'react';
 import "./Home.css";
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import WaButton from '../components/WaButton.jsx';
 import WaFloat from '../components/WaFloat.jsx';
 import Reveal from '../components/Reveal.jsx';
+
+import farmPicture from '../assets/images/farmpicture.jpg';
+import cocoaSlide from '../assets/images/cocoa.jpeg';
+import infrastructureSlide from '../assets/images/infastructurehero.jpeg';
+import cocoaButterSlide from '../assets/images/cocoabutter.jpeg';
+
 import cocoaTree from '../assets/images/cocoatree2.jpg';
 import cocoaBrandBg from '../assets/images/cocoa.jpeg';
 import natkokoaImage from '../assets/images/Nathcocoaimage.jpeg';
 import kokoaSkinImage from '../assets/images/kokoaskin.jpeg';
 
-
-
 export default function Home() {
+
+  const heroSlides = [
+    farmPicture,
+    cocoaSlide,
+    infrastructureSlide,
+    cocoaButterSlide,
+  ];
+
+  const [heroSlide, setHeroSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeroSlide((current) => (current + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
-         <Navbar opaque />
-      {/* Hero section */}
+      <Navbar opaque />
+
+      {/* HERO SECTION */}
       <header className="hero">
-        <div
-  className="hero-photo"
-  style={{ backgroundImage: `url(${cocoaTree})` }}
-></div>
+
+        <div className="hero-slides">
+          {heroSlides.map((image, index) => (
+            <div
+              key={image}
+              className={`hero-photo ${
+                index === heroSlide ? 'active' : ''
+              }`}
+              style={{
+                backgroundImage: `url(${image})`,
+              }}
+            />
+          ))}
+        </div>
 
         <div className="hero-content container">
           <div className="hero-text">
+
             <h1 className="hero-h1">
-              <span style={{ '--delay': '0.15s' }}>West African Cocoa.</span>
-              <span style={{ '--delay': '0.3s' }}>Pure. Traceable.</span>
-              <span style={{ '--delay': '0.45s' }}>Real Hands.</span>
+              <span style={{ '--delay': '0.15s' }}>
+                West African Cocoa.
+              </span>
+
+              <span style={{ '--delay': '0.3s' }}>
+                Pure. Traceable.
+              </span>
+
+              <span style={{ '--delay': '0.45s' }}>
+                Real Hands.
+              </span>
             </h1>
 
             <p className="hero-sub">
-              We own the farm, the factory and the packaging line, delivering
-              premium cocoa to homes and businesses worldwide.
+              We own the farm, the factory and the packaging line,
+              delivering premium cocoa to homes and businesses worldwide.
             </p>
 
             <div className="btn-row hero-buttons">
+
               <WaButton waKey="general" className="btn-gold">
                 Chat With Us
               </WaButton>
@@ -43,10 +87,15 @@ export default function Home() {
               <Link to="/products" className="btn-cocoa">
                 Explore Products
               </Link>
+
             </div>
+
           </div>
         </div>
+
       </header>
+
+      {/* YOUR STORY SECTION CONTINUES HERE */}
 
       {/* Story section */}
       <section className="story-section">

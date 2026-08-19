@@ -33,7 +33,7 @@ export default function About() {
       <Navbar opaque />
 
       <PageHero
-  photo={cocoaTreeImage}
+  photo={cocoaImage}
   overline="Our Story"
   title={
     <>
