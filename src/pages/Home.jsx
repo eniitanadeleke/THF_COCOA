@@ -15,6 +15,8 @@ import cocoaTree from '../assets/images/cocoatree2.jpg';
 import cocoaBrandBg from '../assets/images/cocoa.jpeg';
 import natkokoaImage from '../assets/images/Nathcocoaimage.jpeg';
 import kokoaSkinImage from '../assets/images/kokoaskin.jpeg';
+import CocoaPowderImage from '../assets/images/cocoapowder2.jpg';
+import CocoaBUtterImage from '../assets/images/cocoabutter.jpeg';
 
 export default function Home() {
 
@@ -125,16 +127,14 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* Brands section */}
-      <section
-  className="brands-section"
-  style={{ backgroundImage: `url(${cocoaBrandBg})` }}
->
+{/* OUR BRANDS */}
+<section className="brands-section" style={{ backgroundImage:`url(${cocoaBrandBg})` }}>
   <div className="brands-overlay"></div>
   <div className="brands-glow brands-glow-one"></div>
   <div className="brands-glow brands-glow-two"></div>
 
   <div className="container">
+
     <Reveal as="div" className="brands-heading">
       <p className="brands-overline">Our Brands</p>
 
@@ -149,20 +149,19 @@ export default function Home() {
     </Reveal>
 
     <div className="brands-grid">
-      <Reveal
-        as={Link}
-        to="/brands#natkokoa"
-        className="brand-card"
-      >
-        <img
-          src={natkokoaImage}
-          alt="Natkokoa natural cocoa products"
-          className="brand-card-image"
-        />
 
-        <div className="brand-card-overlay"></div>
-        <div className="brand-card-shine"></div>
-        <div className="brand-card-number">01</div>
+      {/* NATKOKOA */}
+      <Reveal as={Link} to="/brands#natkokoa" className="brand-card">
+
+        <div className="brand-card-visual">
+          <img
+            src={CocoaPowderImage}
+            alt="Natkokoa natural cocoa products"
+            className="brand-card-image"
+          />
+
+          <span className="brand-card-number">01</span>
+        </div>
 
         <div className="brand-card-content">
           <p className="brand-card-label">Wellness Food</p>
@@ -171,30 +170,29 @@ export default function Home() {
 
           <p className="brand-card-description">
             Pure, natural cocoa for everyday wellness, from rich cocoa
-            powder to nourishing drinks and other carefully made products.
+            powder to nourishing drinks and carefully made products.
           </p>
 
           <span className="brand-card-button">
-            <span>Discover</span>
+            Discover
             <span className="brand-card-arrow">→</span>
           </span>
         </div>
+
       </Reveal>
 
-      <Reveal
-        as={Link}
-        to="/brands#kokoaskin"
-        className="brand-card"
-      >
-        <img
-          src={kokoaSkinImage}
-          alt="KokoaSkin natural cocoa butter skincare"
-          className="brand-card-image"
-        />
+      {/* KOKOASKIN */}
+      <Reveal as={Link} to="/brands#kokoaskin" className="brand-card">
 
-        <div className="brand-card-overlay"></div>
-        <div className="brand-card-shine"></div>
-        <div className="brand-card-number">02</div>
+        <div className="brand-card-visual">
+          <img
+            src={CocoaBUtterImage}
+            alt="KokoaSkin natural cocoa butter skincare"
+            className="brand-card-image"
+          />
+
+          <span className="brand-card-number">02</span>
+        </div>
 
         <div className="brand-card-content">
           <p className="brand-card-label">Natural Beauty</p>
@@ -202,16 +200,18 @@ export default function Home() {
           <h3 className="brand-card-name">KokoaSkin</h3>
 
           <p className="brand-card-description">
-            Naturally rich cocoa-butter skincare crafted from the same
+            Naturally rich cocoa butter skincare crafted from the same
             cocoa beans we grow, process and carefully preserve.
           </p>
 
           <span className="brand-card-button">
-            <span>Discover</span>
+            Discover
             <span className="brand-card-arrow">→</span>
           </span>
         </div>
+
       </Reveal>
+
     </div>
   </div>
 </section>
@@ -320,7 +320,7 @@ export default function Home() {
 
         <a
           className="trade-quote-button"
-          href="https://wa.me/2340000000000"
+          href="https://wa.me/2348187213821"
           target="_blank"
           rel="noreferrer"
         >
@@ -402,7 +402,7 @@ export default function Home() {
 
       <a
         className="partner-btn partner-btn-whatsapp"
-        href="https://wa.me/2340000000000"
+        href="https://wa.me/2348187213821"
         target="_blank"
         rel="noreferrer"
       >

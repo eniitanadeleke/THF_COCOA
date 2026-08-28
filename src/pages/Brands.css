@@ -16,198 +16,173 @@
   .brands-title-bottom { padding-left:30px; }
 
 }
+/* NATKOKOA */
 
-/* Natkokoa */
+.natkokoa-section{position:relative;overflow:hidden;isolation:isolate;min-height:100vh;display:flex;align-items:center;padding:100px 0;background:linear-gradient(135deg,#fffaf0 0%,#f5ead8 55%,#fffdf8 100%)}
 
-.natkokoa-section {
-  position: relative;
-  overflow: hidden;
-  min-height: calc(100vh - 90px);
-  display: flex;
-  align-items: center;
-  padding: 60px 0;
-  background: linear-gradient(135deg, #fffdf8 0%, #f7f0e5 55%, #fffaf3 100%);
-}
+.natkokoa-section::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(circle at 85% 25%,rgba(197,142,49,.12),transparent 30%),radial-gradient(circle at 8% 80%,rgba(39,83,31,.08),transparent 28%)}
 
-.natkokoa-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 70px;
-}
+.natkokoa-orb{position:absolute;z-index:-1;border-radius:50%;filter:blur(50px);pointer-events:none}
 
-.natkokoa-copy {
-  max-width: 620px;
-}
+.natkokoa-orb-one{width:360px;height:360px;right:-130px;top:40px;background:rgba(215,163,61,.13)}
 
-.natkokoa-overline {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 18px;
-}
+.natkokoa-orb-two{width:300px;height:300px;left:-120px;bottom:-50px;background:rgba(43,87,34,.08)}
 
-.natkokoa-overline span {
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(189, 131, 48, .45);
-  border-radius: 50%;
-  color: #b57920;
-  font: 600 .58rem "Manrope", sans-serif;
-}
+.natkokoa-grid{display:grid;grid-template-columns:.92fr 1.08fr;align-items:center;gap:90px}
 
-.natkokoa-overline p {
-  margin: 0;
-  color: #a66e23;
-  font: 600 .72rem "Manrope", sans-serif;
-  letter-spacing: .3em;
-  text-transform: uppercase;
-}
+.natkokoa-copy{max-width:620px}
 
-.natkokoa-overline i {
-  width: 90px;
-  height: 1px;
-  background: linear-gradient(90deg, #bd8330, transparent);
-}
+/* OVERLINE */
 
-.natkokoa-title {
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(4.5rem, 7vw, 7rem);
-  line-height: .82;
-  color: var(--green);
-}
+.natkokoa-overline{display:flex;align-items:center;gap:14px;margin-bottom:20px}
 
-.natkokoa-title span {
-  color: var(--gold);
-  font-style: italic;
-  font-weight: 400;
-}
+.natkokoa-overline span{width:40px;height:40px;display:grid;place-items:center;flex:0 0 40px;border:1px solid rgba(184,126,37,.38);border-radius:50%;color:#a86c17;font:700 .58rem "Manrope",sans-serif}
 
-.natkokoa-divider {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 26px 0;
-}
+.natkokoa-overline p{margin:0;color:#96631e;font:700 .68rem "Manrope",sans-serif;letter-spacing:.3em;text-transform:uppercase}
 
-.natkokoa-divider span {
-  width: 70px;
-  height: 1px;
-  background: #c8a15a;
-}
+.natkokoa-overline i{width:85px;height:1px;display:block;background:linear-gradient(90deg,#bc812a,transparent)}
 
-.natkokoa-divider i {
-  color: #c8a15a;
-  font-style: normal;
-}
+/* TITLE */
 
-.natkokoa-lead {
-  color: #66594d;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  margin-bottom: 28px;
-}
+.natkokoa-title{margin:0;color:#23551d;font:500 clamp(5rem,7vw,7.4rem)/.8 "Cormorant Garamond",Georgia,serif;letter-spacing:-.045em}
 
-.natkokoa-benefits {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
+.natkokoa-title span{color:#c88a18;font-style:italic;font-weight:400}
 
-.natkokoa-benefits li {
-  padding: 18px;
-  border-radius: 18px;
-  background: rgba(255,255,255,.65);
-  border: 1px solid rgba(0,0,0,.06);
-}
+/* DIVIDER */
 
-.natkokoa-benefit-number {
-  display: inline-flex;
-  width: 34px;
-  height: 34px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: var(--green);
-  color: #fff;
-  font-size: .7rem;
-  margin-bottom: 12px;
-}
+.natkokoa-divider{display:flex;align-items:center;gap:13px;margin:29px 0}
 
-.natkokoa-benefits strong {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--green);
-}
+.natkokoa-divider span{width:72px;height:1px;background:#c59542}
 
-.natkokoa-benefits p {
-  margin: 0;
-  color: #6d6258;
-  font-size: .9rem;
-}
+.natkokoa-divider i{color:#c59542;font-style:normal;font-size:.8rem}
 
-.natkokoa-actions {
-  display: flex;
-  gap: 18px;
-  margin-top: 32px;
-  align-items: center;
-}
+/* LEAD */
 
-.natkokoa-products-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--green);
-  font-weight: 600;
-}
+.natkokoa-lead{max-width:600px;margin:0 0 34px;color:#645346;font:300 1.02rem/1.85 "Manrope",sans-serif}
 
-.natkokoa-image {
-  height: 560px;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0,0,0,.15);
-}
+/* BENEFITS */
 
-.natkokoa-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: .6s;
-}
+.natkokoa-benefits{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(52,87,34,.16);border-bottom:1px solid rgba(52,87,34,.16)}
 
-.natkokoa-image:hover img {
-  transform: scale(1.04);
-}
+.natkokoa-benefit{position:relative;display:grid;grid-template-columns:42px 1fr;gap:14px;padding:21px 18px 21px 0}
 
-@media (max-width: 992px) {
+.natkokoa-benefit:nth-child(odd){border-right:1px solid rgba(52,87,34,.13)}
 
-  .natkokoa-section {
-    min-height: auto;
-    padding: 80px 0;
-  }
+.natkokoa-benefit:nth-child(-n+2){border-bottom:1px solid rgba(52,87,34,.13)}
 
-  .natkokoa-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
+.natkokoa-benefit:nth-child(even){padding-left:22px}
 
-  .natkokoa-benefits {
-    grid-template-columns: 1fr;
-  }
+.natkokoa-benefit-number{width:34px;height:34px;display:grid;place-items:center;border:1px solid rgba(35,85,29,.3);border-radius:50%;color:#276021;background:rgba(255,255,255,.5);font:700 .62rem "Manrope",sans-serif}
 
-  .natkokoa-image {
-    height: 450px;
-  }
+.natkokoa-benefit strong{display:block;margin-bottom:5px;color:#25571f;font:600 .9rem/1.35 "Manrope",sans-serif}
+
+.natkokoa-benefit p{margin:0;color:#76675c;font:300 .8rem/1.5 "Manrope",sans-serif}
+
+/* ACTIONS */
+
+.natkokoa-actions{display:flex;align-items:center;gap:24px;margin-top:34px}
+
+.natkokoa-products-link{display:inline-flex;align-items:center;gap:12px;color:#25571f;text-decoration:none;font:700 .72rem "Manrope",sans-serif;letter-spacing:.08em;text-transform:uppercase}
+
+.natkokoa-products-link i{width:38px;height:38px;display:grid;place-items:center;border:1px solid rgba(35,85,29,.3);border-radius:50%;font-style:normal;transition:transform .3s ease,background .3s ease,color .3s ease}
+
+.natkokoa-products-link:hover i{transform:translateX(5px);background:#25571f;color:#fff}
+
+/* PRODUCT VISUAL */
+
+.natkokoa-visual{position:relative;min-width:0;padding:28px}
+
+/* IMAGE FRAME */
+
+.natkokoa-image-frame{position:relative;height:650px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:26px;border-radius:44px 8px 44px 8px;background:linear-gradient(145deg,#fffaf3 0%,#ecd8ba 100%);box-shadow:0 35px 80px rgba(74,45,22,.2)}
+
+.natkokoa-image-frame::before{content:"";position:absolute;inset:14px;z-index:3;border:1px solid rgba(210,157,61,.32);border-radius:34px 5px 34px 5px;pointer-events:none}
+
+/* IMAGE */
+
+.natkokoa-image-frame img{position:relative;z-index:1;width:100%;height:100%;display:block;object-fit:contain;object-position:center;border-radius:26px 5px 26px 5px;transition:transform .8s cubic-bezier(.22,1,.36,1),filter .5s ease;filter:drop-shadow(0 22px 28px rgba(70,38,17,.13))}
+
+.natkokoa-image-frame:hover img{transform:scale(1.018);filter:drop-shadow(0 28px 34px rgba(70,38,17,.18))}
+
+/* IMAGE NUMBER */
+
+.natkokoa-image-number{position:absolute;top:32px;left:32px;z-index:5;width:52px;height:52px;display:grid;place-items:center;border:1px solid rgba(235,190,92,.58);border-radius:16px;background:rgba(37,20,9,.76);color:#efbd52;font:700 .68rem "Manrope",sans-serif;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 10px 25px rgba(0,0,0,.14)}
+
+/* IMAGE CAPTION */
+
+.natkokoa-image-caption{position:absolute;right:38px;bottom:38px;z-index:5;max-width:220px;padding:14px 18px;border:1px solid rgba(235,190,92,.32);border-radius:14px;background:rgba(32,17,8,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 12px 30px rgba(0,0,0,.15)}
+
+.natkokoa-image-caption small{display:block;margin-bottom:4px;color:#e5ae3d;font:700 .52rem "Manrope",sans-serif;letter-spacing:.2em;text-transform:uppercase}
+
+.natkokoa-image-caption strong{display:block;color:#fff7eb;font:500 1rem/1.15 "Cormorant Garamond",Georgia,serif}
+
+/* 100% NATURAL STAMP */
+
+.natkokoa-stamp{position:absolute;left:-5px;bottom:65px;z-index:7;width:108px;height:108px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(184,126,37,.48);border-radius:50%;background:linear-gradient(145deg,#fffdf7,#f3e2c4);box-shadow:0 15px 40px rgba(75,45,22,.17),inset 0 0 0 7px rgba(255,255,255,.5)}
+
+.natkokoa-stamp::before{content:"";position:absolute;inset:8px;border:1px solid rgba(37,87,31,.16);border-radius:50%}
+
+.natkokoa-stamp span{position:relative;z-index:2;color:#25571f;font:600 1.75rem/1 "Cormorant Garamond",Georgia,serif}
+
+.natkokoa-stamp small{position:relative;z-index:2;margin-top:5px;color:#9a651d;font:700 .5rem/1 "Manrope",sans-serif;letter-spacing:.15em;text-transform:uppercase}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.natkokoa-section{min-height:auto;padding:85px 0}
+
+.natkokoa-grid{grid-template-columns:1fr;gap:60px}
+
+.natkokoa-copy{max-width:100%}
+
+.natkokoa-visual{order:2;padding:20px}
+
+.natkokoa-image-frame{height:540px;padding:22px}
+
+.natkokoa-stamp{left:-2px;bottom:45px;width:96px;height:96px}
 
 }
 
+/* MOBILE */
+
+@media(max-width:600px){
+
+.natkokoa-section{padding:70px 0}
+
+.natkokoa-grid{gap:45px}
+
+.natkokoa-title{font-size:clamp(4.2rem,18vw,5.7rem)}
+
+.natkokoa-benefits{grid-template-columns:1fr}
+
+.natkokoa-benefit{border-right:0!important;border-bottom:1px solid rgba(52,87,34,.13)!important;padding:18px 0!important}
+
+.natkokoa-benefit:last-child{border-bottom:0!important}
+
+.natkokoa-actions{flex-direction:column;align-items:stretch}
+
+.natkokoa-products-link{justify-content:center}
+
+.natkokoa-visual{padding:10px 10px 35px}
+
+.natkokoa-image-frame{height:430px;padding:16px;border-radius:30px 6px 30px 6px}
+
+.natkokoa-image-frame::before{inset:10px;border-radius:23px 4px 23px 4px}
+
+.natkokoa-image-frame img{border-radius:20px 4px 20px 4px}
+
+.natkokoa-image-number{top:24px;left:24px;width:46px;height:46px}
+
+.natkokoa-image-caption{right:24px;bottom:24px;padding:11px 14px}
+
+.natkokoa-stamp{width:82px;height:82px;left:-2px;bottom:8px}
+
+.natkokoa-stamp span{font-size:1.4rem}
+
+.natkokoa-stamp small{font-size:.43rem}
+
+}
 
 /* KokoaSkin */
 

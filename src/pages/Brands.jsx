@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import cocoaButterHero from "../assets/images/cocoabutter.jpeg";
 import natkokoaImage from "../assets/images/Nathcocoaimage.jpeg";
 import kokoaSkinImage from "../assets/images/kokoaskin.jpeg";
+import CocoaPowderImage from '../assets/images/cocoapowder2.jpg';
 
 import './Brands.css';
 
@@ -36,97 +37,106 @@ export default function Brands() {
       />
 
       {/* NATKOKOA */}
-      <section className="natkokoa-section" id="natkokoa">
-        <div className="container">
-          <div className="natkokoa-grid">
+<section className="natkokoa-section" id="natkokoa">
+  <div className="natkokoa-orb natkokoa-orb-one"></div>
+  <div className="natkokoa-orb natkokoa-orb-two"></div>
 
-            <Reveal as="div" className="natkokoa-copy">
-              <div className="natkokoa-overline">
-                <span>01</span>
-                <p>Wellness Food</p>
-                <i></i>
-              </div>
+  <div className="container">
+    <div className="natkokoa-grid">
 
-              <h2 className="natkokoa-title">
-                Nat
-                <span>kokoa</span>
-              </h2>
+      <Reveal as="div" className="natkokoa-copy">
+        <div className="natkokoa-overline">
+          <span>01</span>
+          <p>Wellness Food</p>
+          <i></i>
+        </div>
 
-              <div className="natkokoa-divider">
-                <span></span>
-                <i>✦</i>
-                <span></span>
-              </div>
+        <h2 className="natkokoa-title">
+          Nat<span>kokoa</span>
+        </h2>
 
-              <p className="natkokoa-lead">
-                Pure, natural cocoa for everyday wellness. No additives, no
-                shortcuts, just single-origin West African cocoa, processed and
-                packaged in our own facilities.
-              </p>
+        <div className="natkokoa-divider">
+          <span></span>
+          <i>✦</i>
+          <span></span>
+        </div>
 
-              <ul className="natkokoa-benefits">
-                <li>
-                  <span className="natkokoa-benefit-number">01</span>
-                  <div>
-                    <strong>100% natural cocoa powder</strong>
-                    <p>Rich in antioxidants and flavanols</p>
-                  </div>
-                </li>
+        <p className="natkokoa-lead">
+          Pure, natural cocoa for everyday wellness. No additives, no
+          shortcuts, just single-origin West African cocoa, processed and
+          packaged in our own facilities.
+        </p>
 
-                <li>
-                  <span className="natkokoa-benefit-number">02</span>
-                  <div>
-                    <strong>
-                      Available in 250g and 500g consumer packs
-                    </strong>
-                    <p>Designed for everyday use</p>
-                  </div>
-                </li>
+        <div className="natkokoa-benefits">
+          <div className="natkokoa-benefit">
+            <span className="natkokoa-benefit-number">01</span>
+            <div>
+              <strong>100% natural cocoa powder</strong>
+              <p>Rich in antioxidants and naturally occurring flavanols.</p>
+            </div>
+          </div>
 
-                <li>
-                  <span className="natkokoa-benefit-number">03</span>
-                  <div>
-                    <strong>Traceable from our farm to your cup</strong>
-                    <p>Complete transparency at every stage</p>
-                  </div>
-                </li>
+          <div className="natkokoa-benefit">
+            <span className="natkokoa-benefit-number">02</span>
+            <div>
+              <strong>Made for everyday wellness</strong>
+              <p>Available in convenient consumer packs for everyday use.</p>
+            </div>
+          </div>
 
-                <li>
-                  <span className="natkokoa-benefit-number">04</span>
-                  <div>
-                    <strong>
-                      Perfect for drinks, baking and smoothies
-                    </strong>
-                    <p>Natural, versatile and easy to enjoy</p>
-                  </div>
-                </li>
-              </ul>
+          <div className="natkokoa-benefit">
+            <span className="natkokoa-benefit-number">03</span>
+            <div>
+              <strong>Traceable from farm to cup</strong>
+              <p>Complete visibility across our growing and production chain.</p>
+            </div>
+          </div>
 
-              <div className="natkokoa-actions">
-                <WaButton waKey="natkokoa">
-                  Order via WhatsApp
-                </WaButton>
-
-                <Link
-                  to="/products"
-                  className="natkokoa-products-link"
-                >
-                  <span>View Products</span>
-                  <i>→</i>
-                </Link>
-              </div>
-            </Reveal>
-
-            <Reveal as="div" className="natkokoa-image">
-              <img
-                src={natkokoaImage}
-                alt="Natkokoa natural cocoa products"
-              />
-            </Reveal>
-
+          <div className="natkokoa-benefit">
+            <span className="natkokoa-benefit-number">04</span>
+            <div>
+              <strong>Naturally versatile</strong>
+              <p>Perfect for drinks, baking, smoothies and everyday recipes.</p>
+            </div>
           </div>
         </div>
-      </section>
+
+        <div className="natkokoa-actions">
+          <WaButton waKey="natkokoa">
+            Order via WhatsApp
+          </WaButton>
+
+          <Link to="/products" className="natkokoa-products-link">
+            <span>View Products</span>
+            <i>→</i>
+          </Link>
+        </div>
+      </Reveal>
+
+      <Reveal as="div" className="natkokoa-visual">
+        <div className="natkokoa-image-frame">
+          <img
+            src={CocoaPowderImage}
+            alt="Natkokoa natural cocoa powder"
+          />
+
+          <span className="natkokoa-image-number">01</span>
+
+          <div className="natkokoa-image-caption">
+            <small>Single Origin</small>
+            <strong>West African Cocoa</strong>
+          </div>
+        </div>
+
+        <div className="natkokoa-stamp">
+          <span>100%</span>
+          <small>Natural</small>
+        </div>
+      </Reveal>
+
+    </div>
+  </div>
+</section>
 
       {/* KOKOASKIN */}
       <section className="kokoaskin-section" id="kokoaskin">

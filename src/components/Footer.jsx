@@ -45,7 +45,15 @@ export default function Footer() {
             <ul>
               {/* REPLACE hrefs with live links */}
               <li><a href="#">Shop on Amazon</a></li>
-              <li><a href="#">Instagram</a></li>
+              <li>
+  <a
+    href="https://www.instagram.com/thfcocoa/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Instagram
+  </a>
+</li>
             </ul>
           </div>
         </div>

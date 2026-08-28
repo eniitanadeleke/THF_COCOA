@@ -56,7 +56,7 @@ export default function About() {
   {/* LEFT: STORY CONTENT */}
   <Reveal as="div" className="about-intro-copy">
 
-    <p className="about-overline">Who We Are</p>
+    
 
     <h2 className="about-title">
       Cocoa the way it
@@ -124,7 +124,7 @@ export default function About() {
 
       <Reveal as="div" className="journey-heading">
 
-        <p className="about-overline">The Journey</p>
+        
 
         <h2 className="journey-title">How we got here</h2>
 
