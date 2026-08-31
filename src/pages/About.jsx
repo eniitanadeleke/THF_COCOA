@@ -34,7 +34,7 @@ export default function About() {
 
       <PageHero
   photo={cocoaImage}
-  overline="Our Story"
+  // overline="Our Story"
   title={
     <>
       From one farm,

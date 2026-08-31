@@ -18,8 +18,7 @@ nav.site-nav.solid{backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.
 .nav-cta:hover{background:var(--gold-d)}
 
 .nav-burger{display:flex;flex-direction:column;gap:5px;padding:6px;background:none;border:0;cursor:pointer;z-index:1002}
-.nav-burger span{width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
-.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger span{width:24px;height:2.5px;background:#e8b84a;border-radius:3px;transition:.3s;box-shadow:0 0 5px rgba(232,184,74,.25)}.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .nav-burger.open span:nth-child(2){opacity:0}
 .nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(min-width:960px){.nav-burger{display:none}}

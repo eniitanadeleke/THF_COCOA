@@ -116,16 +116,18 @@ nav.site-nav.opaque { background: rgba(28,15,5,0.96); }
 .nav-drawer .drawer-small { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 400; color: rgba(255,255,255,0.5); }
 
 /* ── PAGE HERO (interior pages) ── */
-.page-hero {
-  position: relative; padding: 160px 0 80px;
-  background: var(--dark); overflow: hidden;
-}
-.page-hero-photo { position: absolute; inset: 0; background-position: center; background-size: cover; opacity: 0.35; }
-.page-hero .container { position: relative; z-index: 2; }
-.page-hero .overline { color: var(--gold); }
-.page-hero h1 { color: var(--white); }
-.page-hero .lead { color: rgba(255,255,255,0.7); margin-top: 20px; }
+/* PAGE HERO */
+.page-hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:140px 0 90px;background:var(--dark);overflow:hidden}
+.page-hero-photo{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat;opacity:1;filter:brightness(1.12) saturate(1.08) contrast(1.02);transform:none}
+.page-hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(24,12,5,.55) 0%,rgba(24,12,5,.40) 32%,rgba(24,12,5,.20) 58%,rgba(24,12,5,.07) 82%,rgba(24,12,5,.03) 100%);pointer-events:none}
+.page-hero .container{position:relative;z-index:2;width:100%}
+.page-hero .overline{color:var(--gold)}
+.page-hero h1{color:var(--white);text-shadow:0 3px 22px rgba(0,0,0,.3)}
+.page-hero .lead{max-width:900px;margin-top:20px;color:rgba(255,255,255,.9);text-shadow:0 2px 12px rgba(0,0,0,.28)}
 
+@media(max-width:992px){.page-hero{min-height:100svh;padding:130px 0 75px}.page-hero-photo{background-position:center;filter:brightness(1.1) saturate(1.06)}}
+
+@media(max-width:600px){.page-hero{min-height:100svh;padding:115px 0 65px}.page-hero-photo{background-position:58% center;filter:brightness(1.08) saturate(1.05)}.page-hero::before{background:linear-gradient(90deg,rgba(24,12,5,.62) 0%,rgba(24,12,5,.43) 55%,rgba(24,12,5,.13) 100%)}.page-hero .lead{color:rgba(255,255,255,.92)}}
 /* ── BUTTONS ── */
 .btn-gold {
   display: inline-block; background: var(--gold); color: var(--dark);

@@ -10,6 +10,9 @@ import cocoaImage from "../assets/images/cocoa.jpeg";
 import cocoaButterImage from "../assets/images/cocoabutter.jpeg";
 import kokoaSkinImage from "../assets/images/kokoaskin.jpeg";
 import natkokoaImage from "../assets/images/Nathcocoaimage.jpeg";
+import CocoaDrink from "../assets/images/cocoadrink.jpg"
+import DryCocoaPowder from "../assets/images/drycocoapowder.jpg"
+import CocoaSkin from "../assets/images/kokoaskinimage.jpeg"
 import './Products.css';
 
 const FILTERS = [
@@ -25,7 +28,7 @@ const PRODUCTS = [
     brand: "Natkokoa",
     cat: "natkokoa",
     desc: "Pure West African cocoa crafted for everyday wellness and nourishment.",
-    img: natkokoaImage,
+    img: DryCocoaPowder,
     waKey: "natkokoa",
     cta: "Enquire Now",
   },
@@ -35,7 +38,7 @@ const PRODUCTS = [
     brand: "Natkokoa",
     cat: "natkokoa",
     desc: "Naturally rich cocoa for drinks, wellness routines and everyday enjoyment.",
-    img: natkokoaImage,
+    img: CocoaDrink,
     waKey: "natkokoa",
     cta: "Enquire Now",
   },
@@ -45,20 +48,20 @@ const PRODUCTS = [
     brand: "KokoaSkin",
     cat: "kokoaskin",
     desc: "Naturally rich cocoa-butter skincare for soft, nourished and hydrated skin.",
-    img: kokoaSkinImage,
+    img: CocoaSkin,
     waKey: "kokoaskin",
     cta: "Enquire Now",
   },
 
-  {
-    name: "KokoaSkin Natural Beauty",
-    brand: "KokoaSkin",
-    cat: "kokoaskin",
-    desc: "Natural cocoa-based skincare crafted from cocoa grown and processed by us.",
-    img: kokoaSkinImage,
-    waKey: "kokoaskin",
-    cta: "Enquire Now",
-  },
+  // {
+  //   name: "KokoaSkin Natural Beauty",
+  //   brand: "KokoaSkin",
+  //   cat: "kokoaskin",
+  //   desc: "Natural cocoa-based skincare crafted from cocoa grown and processed by us.",
+  //   img: kokoaSkinImage,
+  //   waKey: "kokoaskin",
+  //   cta: "Enquire Now",
+  // },
 
   {
     name: "Cocoa Powder",
