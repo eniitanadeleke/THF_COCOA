@@ -55,7 +55,7 @@ export default function Trade() {
     </WaButton>
 
     <a
-      href="mailto:trade@thfcocoa.com"
+      href="mailto:contact@thfcocoa.com"
       className="btn-outline btn-outline-light trade-email-btn"
     >
       Email Trade Team

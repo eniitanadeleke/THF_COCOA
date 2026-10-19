@@ -228,7 +228,7 @@ export default function About() {
   </div>
 </section>
 
-      {/* CONTACT */}
+    {/* CONTACT */}
 <section className="contact-section" id="contact">
   <div className="container">
 
@@ -239,8 +239,8 @@ export default function About() {
         <h2>Let&apos;s talk cocoa</h2>
 
         <p>
-          The fastest way to reach us is WhatsApp, or send an enquiry using the
-          form and our team will get back to you.
+          Reach us via WhatsApp, email, or send an enquiry using the form and
+          our team will get back to you.
         </p>
       </div>
     </Reveal>
@@ -248,7 +248,6 @@ export default function About() {
     <div className="contact-grid">
 
       {/* Contact information */}
-
       <Reveal as="div" className="contact-card contact-info-card">
         <div className="contact-card-head">
           <span className="contact-card-number">01</span>
@@ -261,6 +260,7 @@ export default function About() {
 
         <div className="contact-list">
 
+          {/* Address */}
           <div className="contact-detail">
             <div className="contact-count">01</div>
 
@@ -272,6 +272,7 @@ export default function About() {
             </div>
           </div>
 
+          {/* WhatsApp */}
           <div className="contact-detail">
             <div className="contact-count">02</div>
 
@@ -281,11 +282,12 @@ export default function About() {
               <h4>WhatsApp</h4>
 
               <WaLink waKey="contact">
-  +234 818 721 3821 — chat with us
-</WaLink>
+                +234 814 106 3806 — chat with us
+              </WaLink>
             </div>
           </div>
 
+          {/* Email */}
           <div className="contact-detail">
             <div className="contact-count">03</div>
 
@@ -294,16 +296,17 @@ export default function About() {
             <div className="contact-detail-copy">
               <h4>Email</h4>
 
-              <a href="mailto:hello@thfcocoa.com">
-                hello@thfcocoa.com
+              <a href="mailto:info@thfcocoa.com">
+                info@thfcocoa.com
               </a>
 
-              <a href="mailto:trade@thfcocoa.com">
-                trade@thfcocoa.com
+              <a href="mailto:contact@thfcocoa.com">
+                contact@thfcocoa.com
               </a>
             </div>
           </div>
 
+          {/* Instagram */}
           <div className="contact-detail">
             <div className="contact-count">04</div>
 
@@ -313,12 +316,12 @@ export default function About() {
               <h4>Instagram</h4>
 
               <a
-  href="https://www.instagram.com/thfcocoa?igsh=aDByNTZiaXM5N2F0"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  @thfcocoa
-</a>
+                href="https://www.instagram.com/thfcocoa?igsh=aDByNTZiaXM5N2F0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @thfcocoa
+              </a>
             </div>
           </div>
 
@@ -338,8 +341,11 @@ export default function About() {
 
 
       {/* Contact form */}
-
-      <Reveal as="form" onSubmit={onSubmit} className="contact-card contact-form-card">
+      <Reveal
+        as="form"
+        onSubmit={onSubmit}
+        className="contact-card contact-form-card"
+      >
         <div className="contact-form-head">
           <div className="contact-form-title">
             <span className="contact-card-number">02</span>
@@ -432,7 +438,6 @@ export default function About() {
 
 
     {/* Map */}
-
     <Reveal as="div" className="contact-map-card">
       <div className="contact-map-copy">
         <span className="contact-card-number">03</span>

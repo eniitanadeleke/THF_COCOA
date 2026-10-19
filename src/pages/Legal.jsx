@@ -83,7 +83,7 @@ export default function Legal() {
             </p>
 
             <h3>8. Contact</h3>
-            <p>Questions about these Terms: <a href="mailto:hello@thfcocoa.com">hello@thfcocoa.com</a>.</p>
+            <p>Questions about these Terms: <a href="mailto:contact@thfcocoa.com">contact@thfcocoa.com</a>.</p>
           </section>
 
           <section className="legal-block" id="privacy">
@@ -132,7 +132,7 @@ export default function Legal() {
             <p>
               Under the NDPA you may request access to, correction of, or deletion of your personal
               data, and may withdraw consent at any time. Contact{' '}
-              <a href="mailto:hello@thfcocoa.com">hello@thfcocoa.com</a> to exercise these rights.
+              <a href="mailto:contact@thfcocoa.com">contact@thfcocoa.com</a> to exercise these rights.
             </p>
 
             <h3>7. Changes</h3>

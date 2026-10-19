@@ -35,6 +35,8 @@ export default function Footer() {
             <h4>Get In Touch</h4>
             <ul>
               <li><WaLink waKey="contact">WhatsApp</WaLink></li>
+              <li><a href="mailto:info@thfcocoa.com">info@thfcocoa.com</a></li>
+              <li><a href="mailto:contact@thfcocoa.com">contact@thfcocoa.com</a></li>
               <li><Link to="/about#contact">Contact Us</Link></li>
               <li><WaLink waKey="distributor">Become a Distributor</WaLink></li>
               <li><WaLink waKey="trade">Trade Enquiries</WaLink></li>
